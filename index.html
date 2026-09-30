@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>nutri bolos — Brandbook</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&family=Hanken+Grotesk:wght@400;500;700&display=swap">
+<style>
+:root{--gr:#25232B;--tg:#FF7A3D;--li:#B7A4F2;--lm:#FFE35A;--ce:#9CD3F3;--nv:#F5F3FA;
+--bg:#F5F3FA;--card:#fff;--ink:#25232B;--muted:#62606e;--line:#e3dff0;
+--disp:'Bricolage Grotesque',system-ui,sans-serif;--sans:'Hanken Grotesk',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17151c;--card:#23202b;--ink:#F5F3FA;--muted:#b9b6c6;--line:#383445}}
+:root[data-theme="dark"]{--bg:#17151c;--card:#23202b;--ink:#F5F3FA;--muted:#b9b6c6;--line:#383445}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--sans)}
+main{max-width:1000px;margin:0 auto;padding:24px 20px 90px}
+h2,h3{font-family:var(--disp);font-weight:800;margin:0;line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(32px,6vw,48px);margin:84px 0 10px}
+h3{font-size:22px;margin-bottom:6px}
+p{max-width:64ch;margin:0 0 12px}
+.lead{color:var(--muted);margin-bottom:26px}
+svg.s{display:block}
+.g{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:22px}
+.c.rec{border:3px solid var(--tg)}
+.hero{background:var(--lm);border-radius:34px;padding:60px 20px 52px;text-align:center;color:var(--gr);--a:var(--tg);--b:var(--li);--c:var(--gr);--d:var(--gr)}
+.hero .s{margin:0 auto}
+.wm{font:800 clamp(64px,16vw,132px)/.85 var(--disp);letter-spacing:-.05em;margin-top:14px}
+.wm span,.lk span.l{font-weight:400}
+.hero .tg{font-size:19px;margin:18px 0 0;max-width:none;font-weight:500}
+.lk{display:inline-flex;align-items:center;gap:10px;font:800 32px/.85 var(--disp);letter-spacing:-.04em}
+.lk.st{flex-direction:column;text-align:center}
+.tile{border-radius:26px;padding:30px 16px;display:flex;flex-direction:column;align-items:center;gap:14px;font-size:14px;text-align:center}
+.v1{background:var(--card);border:1px solid var(--line);--a:var(--tg);--b:var(--li);--c:var(--lm);--d:var(--gr);color:var(--gr)}
+.v2{background:var(--gr);--a:var(--tg);--b:var(--li);--c:var(--lm);--d:var(--nv);color:var(--nv)}
+.v3{background:var(--lm);--a:var(--tg);--b:var(--li);--c:var(--gr);--d:var(--gr);color:var(--gr)}
+.v4{background:#fff;--a:#000;--b:#000;--c:#000;--d:#000;--g:#fff;color:#000}
+.sw{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.sw div{border-radius:24px;padding:64px 14px 14px;font-size:13.5px;line-height:1.35}
+.sw b{display:block;font:800 17px var(--disp)}
+.bar{display:flex;height:30px;border-radius:99px;overflow:hidden;margin:18px 0 6px}
+.big{font:800 clamp(40px,9vw,80px)/1 var(--disp);letter-spacing:-.04em}
+.pat{border-radius:26px;height:170px;background:var(--gr);margin:12px 0}
+.note{border-left:4px solid var(--tg);padding:4px 14px;color:var(--muted);margin:22px 0 0;max-width:70ch}
+.tag{display:inline-block;background:var(--lm);color:var(--gr);border-radius:99px;padding:3px 13px;font:700 13px var(--sans);margin:2px 4px 2px 0}
+ul{padding-left:20px;margin:6px 0 14px} li{margin:5px 0}
+.fl{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.fl div{background:var(--gr);color:var(--nv);border-radius:24px;padding:20px 10px 14px;text-align:center;font:700 15px var(--disp);display:flex;flex-direction:column;align-items:center;gap:10px;--b:var(--nv);--d:var(--nv)}
+.box{border-radius:26px;background:var(--li);aspect-ratio:1;display:grid;place-items:center;padding:24px}
+.lid{width:100%;aspect-ratio:1.3;background:var(--nv);border-radius:16px;display:grid;place-items:center;box-shadow:0 14px 0 -4px #8e7bd0;color:var(--gr);--a:var(--tg);--b:var(--li);--c:var(--lm);--d:var(--gr);position:relative}
+.lid:after{content:"sabor: cenoura";position:absolute;bottom:10px;background:var(--tg);border-radius:99px;padding:2px 12px;font:700 12px var(--sans)}
+.lab{background:#fff;color:#25232B;border-radius:22px;padding:16px;font-size:13px;line-height:1.35;border:3px solid var(--gr)}
+.lab h4{margin:0 0 6px;font:800 20px var(--disp)}
+.lab div{display:flex;justify-content:space-between;border-top:1px solid #e3dff0;padding:4px 0}
+.lab .f{background:var(--tg);color:var(--gr);padding:7px 10px;border-radius:12px;margin-top:8px;display:block;font-weight:700}
+.po{border-radius:26px;aspect-ratio:1;padding:26px;display:flex;flex-direction:column;justify-content:space-between;color:var(--gr)}
+.po h3{font-size:clamp(28px,6vw,40px)}
+.po1{background:var(--tg);--a:var(--gr);--b:var(--lm);--c:var(--nv);--d:var(--gr)}
+.po2{background:var(--lm);--a:var(--tg);--b:var(--li);--c:var(--gr);--d:var(--gr)}
+.po3{background:var(--li);--a:var(--gr);--b:var(--nv);--c:var(--tg);--d:var(--gr)}
+.po .lk{font-size:20px}
+.po .tag{background:var(--gr);color:var(--nv);align-self:flex-start}
+.seal{width:130px;aspect-ratio:1;border-radius:50%;background:var(--tg);color:var(--gr);display:grid;place-items:center;text-align:center;font:800 16px/1 var(--disp);margin:6px auto;--a:var(--gr);--b:var(--lm);--c:var(--nv);--d:var(--gr)}
+.av{width:110px;aspect-ratio:1;border-radius:50%;background:var(--lm);display:grid;place-items:center;margin:0 auto;--a:var(--tg);--b:var(--li);--c:var(--gr);--d:var(--gr)}
+.hl{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hl div{text-align:center;font-size:12px}
+.hl i{display:grid;place-items:center;width:62px;height:62px;border-radius:50%;background:var(--gr);margin-bottom:4px;--b:var(--nv);--d:var(--nv)}
+.bag{width:150px;height:170px;background:var(--nv);border:2px solid var(--gr);margin:30px auto 0;position:relative;display:grid;place-items:center;text-align:center;color:var(--gr);--a:var(--tg);--b:var(--li);--c:var(--lm);--d:var(--gr);border-radius:8px;overflow:visible}
+.bag:before{content:"";position:absolute;top:-30px;left:40px;width:70px;height:40px;border:5px solid var(--gr);border-bottom:0;border-radius:40px 40px 0 0}
+.card{background:var(--ce);color:var(--gr);border-radius:22px;padding:20px;aspect-ratio:1.5;display:flex;flex-direction:column;justify-content:space-between;--a:var(--gr);--b:var(--nv);--c:var(--tg);--d:var(--gr)}
+.card p{font:800 22px/1.1 var(--disp);letter-spacing:-.02em;margin:0}
+.pk{background:var(--nv);border:2px solid var(--gr);border-radius:16px;aspect-ratio:1.4;display:grid;place-items:center;position:relative;color:var(--gr);--a:var(--tg);--b:var(--li);--c:var(--lm);--d:var(--gr);overflow:hidden}
+.pk:after{content:"";position:absolute;left:0;right:0;bottom:0;height:26%;background:var(--tg)}
+.cap{text-align:center;font-size:14px;margin:12px 0 0;color:var(--muted)}
+.bite,.po,.lab,.card,.pk{-webkit-mask-image:radial-gradient(circle 34px at 100% 0,#0000 96%,#000),radial-gradient(circle 18px at calc(100% - 36px) 0,#0000 96%,#000),radial-gradient(circle 18px at 100% 62px,#0000 96%,#000);-webkit-mask-composite:source-in;mask-image:radial-gradient(circle 34px at 100% 0,#0000 96%,#000),radial-gradient(circle 18px at calc(100% - 36px) 0,#0000 96%,#000),radial-gradient(circle 18px at 100% 62px,#0000 96%,#000);mask-composite:intersect}
+.hero{-webkit-mask-image:radial-gradient(circle 78px at 100% 0,#0000 96%,#000),radial-gradient(circle 40px at calc(100% - 84px) 0,#0000 96%,#000),radial-gradient(circle 40px at 100% 92px,#0000 96%,#000);-webkit-mask-composite:source-in;mask-image:radial-gradient(circle 78px at 100% 0,#0000 96%,#000),radial-gradient(circle 40px at calc(100% - 84px) 0,#0000 96%,#000),radial-gradient(circle 40px at 100% 92px,#0000 96%,#000);mask-composite:intersect}
+.mn{display:flex;flex-direction:column;gap:9px;font:700 16px var(--disp)}
+.mn b{font-size:22px;font-weight:800;margin-bottom:2px}
+.mn span{display:flex;align-items:center;gap:10px}
+.mn i{width:16px;height:16px;border-radius:50%;flex:none;border:1px solid #0002}
+.mn em{margin-left:auto;font:400 14px var(--sans);font-style:normal;color:var(--muted)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="m" viewBox="0 0 100 100"><defs><mask id="bk"><rect width="100" height="100" fill="#fff"/><circle cx="90" cy="22" r="13" fill="#000"/><circle cx="99" cy="40" r="14" fill="#000"/><circle cx="97" cy="58" r="11" fill="#000"/></mask><clipPath id="cl"><path d="M8 80V58Q8 50 17 47L78 22Q92 16 92 31V80Q92 90 82 90H18Q8 90 8 80Z"/></clipPath></defs>
+<g mask="url(#bk)"><g clip-path="url(#cl)"><rect y="0" width="100" height="46" fill="var(--c)"/><rect y="46" width="100" height="20" fill="var(--b)"/><rect y="66" width="100" height="34" fill="var(--a)"/><path d="M0 46H100M0 66H100" stroke="var(--g,transparent)" stroke-width="3.5"/></g>
+<circle cx="50" cy="28" r="6" fill="var(--d)"/></g></symbol>
+<pattern id="pt" width="80" height="80" patternUnits="userSpaceOnUse" style="--a:#FF7A3D;--b:#B7A4F2;--c:#FFE35A;--d:#F5F3FA"><use href="#m" x="8" y="8" width="26" height="26"/><use href="#m" x="48" y="48" width="26" height="26"/></pattern>
+</svg>
+<main>
+
+<div class="hero">
+<svg class="s" width="120" height="120" role="img" aria-label="Símbolo nutri bolos"><use href="#m"/></svg>
+<div class="wm">nutri<br><span>bolos</span></div>
+<p class="tg">dá vontade.</p>
+</div>
+
+<h2>1. Estratégia</h2>
+<p class="lead">Li "Bloom" como uma marca de visual leve e descomplicado. Se você quis dizer outra, me conte e eu ajusto.</p>
+<div class="g">
+<div class="c"><h3>Posicionamento</h3><p>Para quem se cuida e quer um bolo de verdade no dia a dia, o nutri bolos faz receita própria com ingredientes naturais, sem açúcar e sem glúten, sob encomenda. Premium acessível: o bolo moderno da sua semana, não só de ocasião especial.</p></div>
+<div class="c"><h3>O desafio</h3><p>Bolo saudável costuma parecer remédio ou dieta. A marca precisa parecer algo que a pessoa compra por vontade, fotografa e posta, e que funciona tão bem no Instagram quanto numa loja.</p></div>
+<div class="c"><h3>Personalidade</h3><p><span class="tag">Leve</span><span class="tag">Colorida</span><span class="tag">Gulosa</span></p><p>Nunca parecer: <b>clínica</b>, <b>de dieta</b> ou <b>séria demais</b>.</p></div>
+</div>
+<div class="c" style="margin-top:14px"><h3>Clichês do segmento e como fugir deles</h3>
+<ul>
+<li><b>Rosa-bebê e fitas:</b> cores vivas e inesperadas para o segmento: tangerina, lilás e limão.</li>
+<li><b>Folha verde:</b> não há verde na marca. Natural é ingrediente, não cor.</li>
+<li><b>Cupcake desenhado:</b> o símbolo é uma fatia em formas simples, com cereja e uma mordida.</li>
+<li><b>Letra cursiva:</b> letras minúsculas, redondas e fortes, sem floreio.</li>
+<li><b>Branco frio de "saudável":</b> fundo nuvem com um toque de lilás, mais quente e mais alegre.</li>
+</ul></div>
+
+<h2>2. Três direções</h2>
+<p class="lead">Três caminhos bem diferentes. Recomendo o primeiro.</p>
+<div class="g">
+<div class="c rec"><h3>A. A mordida</h3><p>Uma fatia de bolo em três camadas, com cereja e uma mordida. Mood: moderno, vivo, guloso. Grafite, tangerina, lilás, limão e céu, com tipografia minúscula e forte.</p><b>Recomendada.</b> A mordida diz "dá vontade" sem uma palavra, que é o desafio do segmento. E cada sabor ganha a sua cor, então a embalagem e o post já dizem o sabor antes de alguém ler. Isso ajuda na venda, na organização da produção e na loja física, com vitrine colorida.</div>
+<div class="c"><h3>B. Sopro</h3><p>Traço único, degradês suaves e muito espaço branco. Mood: minimalista e calmo. Bonito, mas fácil de confundir com marca de bem-estar, o que o segmento já faz demais.</p></div>
+<div class="c"><h3>C. Receita em Cartaz</h3><p>Ilustração grande e colagem de ingredientes em cores fortes. Mood: divertido. Muito marcante, mas exige ilustração nova para cada peça e cansa em tamanho pequeno.</p></div>
+</div>
+
+<h2>3. Logo</h2>
+<p class="lead">Uma fatia de bolo em três camadas, com cereja e uma mordida. O ponto memorável: a mordida é o gesto da marca, e as cores das camadas mudam por sabor.</p>
+<div class="g" style="margin-bottom:14px">
+<div class="c" style="display:grid;place-items:center;--a:var(--tg);--b:var(--li);--c:var(--lm);--d:var(--gr)"><span class="lk st" style="font-size:38px"><svg class="s" width="96" height="96"><use href="#m"/></svg><span>nutri<br><span class="l">bolos</span></span></span></div>
+<div class="c" style="display:grid;place-items:center;--a:var(--tg);--b:var(--li);--c:var(--lm);--d:var(--gr)"><span class="lk" style="font-size:38px"><svg class="s" width="66" height="66"><use href="#m"/></svg><span>nutri <span class="l">bolos</span></span></span></div>
+</div>
+<div class="g">
+<div class="tile v1"><svg class="s" width="80" height="80"><use href="#m"/></svg>Principal</div>
+<div class="tile v2"><svg class="s" width="80" height="80"><use href="#m"/></svg>Fundo escuro</div>
+<div class="tile v3"><svg class="s" width="80" height="80"><use href="#m"/></svg>Sobre limão</div>
+<div class="tile v4"><svg class="s" width="80" height="80"><use href="#m"/></svg>Uma cor só</div>
+</div>
+<p class="note">Área de respiro: a altura da camada do meio em volta de tudo. Tamanho mínimo: 16 px de altura na tela e 12 mm na embalagem. No selo de 2 cm, use só o símbolo. Na versão de uma cor, as camadas são separadas por um fio claro.</p>
+
+<div class="c" style="margin-top:14px"><h3>A mordida é o gesto da marca</h3><p>Ela aparece no símbolo e também no canto recortado de posts, etiquetas, cartões e da capa. Quem vê o recorte já reconhece a marca, e em loja vira recorte de caixa e de adesivo.</p><p style="margin:14px 0 6px;font-size:14px;color:var(--muted)">Teste de tamanho (64, 48, 32, 24 e 16 px):</p><div style="display:flex;align-items:flex-end;gap:22px;--a:var(--tg);--b:var(--li);--c:var(--lm);--d:var(--gr)"><svg class="s" width="64" height="64"><use href="#m"/></svg><svg class="s" width="48" height="48"><use href="#m"/></svg><svg class="s" width="32" height="32"><use href="#m"/></svg><svg class="s" width="24" height="24"><use href="#m"/></svg><svg class="s" width="16" height="16"><use href="#m"/></svg></div></div>
+<h2>4. Cores</h2>
+<p class="lead">Cores vivas e frias para um segmento que só usa rosa e verde. Grafite no lugar do preto dá leveza.</p>
+<div class="sw">
+<div style="background:#25232B;color:#fff"><b>Grafite</b>#25232B<br>Textos, logo, fundos escuros</div>
+<div style="background:#FF7A3D;color:#25232B"><b>Tangerina</b>#FF7A3D<br>Cor principal da fatia. Use texto grafite, não branco</div>
+<div style="background:#B7A4F2;color:#25232B"><b>Lilás</b>#B7A4F2<br>Camada do meio, fundos</div>
+<div style="background:#FFE35A;color:#25232B"><b>Limão</b>#FFE35A<br>Destaques e fundos de impacto</div>
+<div style="background:#9CD3F3;color:#25232B"><b>Céu</b>#9CD3F3<br>Apoio e cartões</div>
+<div style="background:#F5F3FA;color:#25232B;border:1px solid #e3dff0"><b>Nuvem</b>#F5F3FA<br>Papel, embalagem e site</div>
+</div>
+<div class="bar"><span style="flex:30;background:#F5F3FA;border:1px solid #e3dff0"></span><span style="flex:22;background:#25232B"></span><span style="flex:16;background:#FF7A3D"></span><span style="flex:12;background:#B7A4F2"></span><span style="flex:12;background:#FFE35A"></span><span style="flex:8;background:#9CD3F3"></span></div>
+<p style="font-size:14px;color:var(--muted)">Uso: nuvem 30%, grafite 22%, tangerina 16%, lilás 12%, limão 12%, céu 8%. Grafite sobre qualquer outra cor tem contraste alto e serve para todo texto. Texto branco sobre tangerina, lilás, limão ou céu não tem contraste suficiente: não use.</p>
+
+<h2>5. Tipografia</h2>
+<div class="c"><div class="big">nutri bolos</div>
+<p><b>Bricolage Grotesque</b>, em minúsculas. Logotipo, títulos e nome dos sabores. Redonda, forte e com personalidade, sem parecer infantil.</p>
+<p style="font:700 26px var(--sans);margin:18px 0 4px">Hanken Grotesk</p>
+<p style="margin:0">Textos, cardápio, preços e tabela nutricional. Neutra e bem legível em tamanho pequeno.</p>
+<p class="note" style="margin-top:16px">Escala: título 48 px, subtítulo 24 px, texto 16 px, legenda 12 px. Títulos em Bricolage 800 com espaçamento apertado, em minúsculas. Textos em Hanken 400, preços e destaques em 700.</p></div>
+
+<h2>6. Sistema de sabores</h2>
+<p class="lead">A ideia central da marca: cada sabor tem a sua cor. A mesma fatia, com camadas trocadas.</p>
+<div class="fl">
+<div style="--a:#FF7A3D;--c:#FF7A3D"><svg class="s" width="56" height="56"><use href="#m"/></svg>cenoura</div>
+<div style="--a:#FFE35A;--c:#FFE35A"><svg class="s" width="56" height="56"><use href="#m"/></svg>limão</div>
+<div style="--a:#9CD3F3;--c:#9CD3F3"><svg class="s" width="56" height="56"><use href="#m"/></svg>coco</div>
+<div style="--a:#B7A4F2;--c:#B7A4F2"><svg class="s" width="56" height="56"><use href="#m"/></svg>amora</div>
+<div style="--a:#25232B;--c:#25232B;background:#3a3744"><svg class="s" width="56" height="56"><use href="#m"/></svg>chocolate</div>
+</div>
+<p class="note">Para a sua mãe: ao lançar um sabor novo, escolha uma cor do quadro e troque as camadas de cima e de baixo. A camada do meio fica sempre clara.</p>
+
+<h2>7. Elemento de apoio</h2>
+<p class="lead">As fatias repetidas e deslocadas viram padrão para papel de seda, forro de caixa e fundo de post.</p>
+<svg class="s pat" width="100%" height="170"><rect width="100%" height="170" fill="url(#pt)"/></svg>
+
+<h2>8. Voz da marca</h2>
+<div class="g">
+<div class="c"><h3>Assinatura</h3><ul><li><b>dá vontade.</b> (principal)</li><li>mordeu, gostou.</li><li>bolo de verdade, vontade de verdade.</li><li>uma mordida e você entende.</li><li>doce na medida.</li></ul><p style="font-size:14px;color:var(--muted)">A principal combina com a mordida, tem duas palavras e fala de desejo, não de restrição.</p></div>
+<div class="c"><h3>Tom de voz</h3><p>Leve, direto e bem-humorado, como um amigo que entende de bolo. Frases curtas, sem culpa e sem promessa de saúde ou de emagrecimento. Fale do que o bolo tem (sabor, ingredientes) e deixe o "sem" como detalhe.</p><p><b>Em vez de</b> "sem açúcar, sem glúten, sem culpa", <b>diga</b> "cenoura, cacau e ovos de verdade. Sem açúcar e sem glúten."</p></div>
+<div class="c"><h3>Legendas de exemplo</h3><p><i>"Segunda pede fatia. Cenoura com chocolate, sem açúcar e sem glúten. Encomenda pelo WhatsApp."</i></p><p><i>"Sabor novo na vitrine: limão. Só dá pra ver a cor e já dá vontade."</i></p></div>
+</div>
+
+<h2>9. Aplicações</h2>
+<p class="lead">Peças para a sua mãe aplicar sozinha: troque só o texto e a cor do sabor.</p>
+<div class="g">
+<div><div class="box"><div class="lid"><span class="lk st" style="margin-top:-18px"><svg class="s" width="70" height="70"><use href="#m"/></svg>nutri <span class="l">bolos</span></span></div></div><p class="cap">Caixa de bolo</p></div>
+<div class="lab"><h4>bolo de cenoura</h4>
+<div><span>Porção</span><span>__ g (1 fatia)</span></div><div><span>Valor energético</span><span>__ kcal</span></div><div><span>Carboidratos</span><span>__ g</span></div><div><span>Açúcares</span><span>0 g</span></div>
+<span class="f">sem açúcar · sem glúten · feito sob encomenda<br>Fabricado em __/__/__ · Validade: __ dias refrigerado</span></div>
+<div><div class="pk"><span class="lk st" style="font-size:20px;margin-top:-14px"><svg class="s" width="44" height="44"><use href="#m"/></svg>nutri bolos</span></div><p class="cap">Embalagem de fatia</p></div>
+<div class="po po1"><h3>cenoura com chocolate</h3><span class="tag">sem açúcar</span><span class="lk"><svg class="s" width="34" height="34"><use href="#m"/></svg>nutri <span class="l">bolos</span></span></div>
+<div class="po po2"><h3>o que tem no bolo</h3><ul style="font-size:16px"><li>ovos de verdade</li><li>cenoura fresca</li><li>cacau</li><li>vontade de repetir</li></ul><span class="lk"><svg class="s" width="34" height="34"><use href="#m"/></svg>nutri <span class="l">bolos</span></span></div>
+<div class="po po3"><h3>encomendas de fim de ano abertas</h3><span class="tag">até dia __</span><span class="lk"><svg class="s" width="34" height="34"><use href="#m"/></svg>nutri <span class="l">bolos</span></span></div>
+<div class="c"><div class="seal"><svg class="s" width="50" height="50"><use href="#m"/></svg>feito pra<br>você</div><p class="cap">Adesivo de lacre (4 cm)</p></div>
+<div class="c"><div class="av"><svg class="s" width="72" height="72"><use href="#m"/></svg></div><p class="cap">Avatar do Instagram</p></div>
+<div class="c"><div class="hl"><div><i><svg class="s" width="34" height="34" style="--a:#FF7A3D;--c:#FF7A3D"><use href="#m"/></svg></i>sabores</div><div><i><svg class="s" width="34" height="34" style="--a:#FFE35A;--c:#FFE35A"><use href="#m"/></svg></i>encomendas</div><div><i><svg class="s" width="34" height="34" style="--a:#9CD3F3;--c:#9CD3F3"><use href="#m"/></svg></i>receitas</div></div><p class="cap">Destaques do Instagram</p></div>
+<div class="c"><div class="bag"><span class="lk st" style="font-size:22px"><svg class="s" width="48" height="48"><use href="#m"/></svg>nutri bolos</span></div><p class="cap">Sacola</p></div>
+<div class="c"><div class="card"><svg class="s" width="34" height="34"><use href="#m"/></svg><p>bolo bom a gente divide. obrigada pela escolha!</p></div><p class="cap">Cartão de agradecimento</p></div>
+<div class="c"><div class="mn"><b>cardápio</b><span><i style="background:#FF7A3D"></i>cenoura<em>R$ __</em></span><span><i style="background:#FFE35A"></i>limão<em>R$ __</em></span><span><i style="background:#9CD3F3"></i>coco<em>R$ __</em></span><span><i style="background:#B7A4F2"></i>amora<em>R$ __</em></span><span><i style="background:#25232B"></i>chocolate<em>R$ __</em></span></div><p class="cap">Cardápio (PDF, A5)</p></div>
+</div>
+<p class="note">Na etiqueta, os campos em branco são de propósito: preencha com os valores reais de cada receita, de preferência revisados por uma nutricionista.</p>
+</main>
+</body>
+</html>
